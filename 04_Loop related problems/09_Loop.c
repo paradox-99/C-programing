@@ -1,7 +1,7 @@
 #include<stdio.h>
 void main()
 {
-    int std_num=0,i; float att=0,assig=0,cl_t=0,mid=0,fin=0;
+    int std_num=0,i; float att=0,assig=0,cl_t=0,mid=0,final=0;
     float mid_t_f=0,final_f=0,total_marks=0;
     printf("How many student(s) = ");
     scanf("%d",&std_num);
@@ -18,8 +18,8 @@ void main()
         scanf("%f",&mid);
         mid_t_f = mid*2*(30/100.0); 
         printf("Term final marks(Maximum-100): ");
-        scanf("%f",&fin);
-        final_f = fin*(40/100.0);
+        scanf("%f",&final);
+        final_f = final*(40/100.0);
         
         total_marks = att + assig + cl_t + mid_t_f + final_f;
 
@@ -38,7 +38,7 @@ void main()
         else if (total_marks >= 70 && total_marks <= 73)
             printf("\nStudent %d:C+\n",i);
         else if (total_marks >= 66 && total_marks <= 69)
-            printf("\nStudent %d:C\n"),i;
+            printf("\nStudent %d:C\n",i);
         else if (total_marks >= 62 && total_marks <= 65)
             printf("\nStudent %d:C-\n",i);
         else if (total_marks >= 58 && total_marks <= 61)

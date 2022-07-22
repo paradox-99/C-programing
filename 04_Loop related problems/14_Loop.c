@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main()
+void main()
 {
     int i,n,r,n_f=1,r_f=1,n_r=1,com=0;
     printf("Enter the of n and r = ");

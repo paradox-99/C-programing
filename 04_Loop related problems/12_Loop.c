@@ -1,5 +1,5 @@
 #include<stdio.h>
-int main()
+void main()
 {
     int i,term, n_1=1,n_2=1,n_3;
     printf("How many terms = ");

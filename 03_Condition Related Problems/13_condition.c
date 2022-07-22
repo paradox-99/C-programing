@@ -23,22 +23,22 @@ void main()
         printf("\nMultiplication: %.3f",a*b);
         break;
     case 4:
-            printf("\n1: Quotient");
-            printf("\n2: Reminder");
-            printf("\nEnter your Choice: ");
-            scanf("%d",&Case);
-            switch (Case)
-            {
-            case 1:
-                printf("\nQuotient: %.3f",a/b);
-                break;
-            case 2:
-                printf("\nReminder: %.3f",(int)a%(int)b);
-                break;
-            default:
-                printf("\nInvalid Input");
-                break;
-            }
+        printf("\n1: Quotient");
+        printf("\n2: Reminder");
+        printf("\nEnter your Choice: ");
+        scanf("%d",&Case);
+        switch (Case)
+        {
+        case 1:
+            printf("\nQuotient: %.3f",a/b);
+            break;
+        case 2:
+            printf("\nReminder: %.3f",(int)a%(int)b);
+            break;
+        default:
+            printf("\nInvalid Input");
+            break;
+        }
         break;
     default:
         printf("\nInvalid Input");

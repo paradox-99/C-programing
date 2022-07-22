@@ -14,17 +14,17 @@ void main()
         scanf("%d",&player_2);
         if(player_1 != player_2)
         {
-          printf("Wrong, %d Chance(s) left..",try-2);
-          printf("\nEnter your next number: ");
-          scanf("%d",&player_2);
-          if(player_1 != player_2)
-          {
-              printf("Player_1 Wins!!!");
-          }
-          else
-          {
+            printf("Wrong, %d Chance(s) left..",try-2);
+            printf("\nEnter your next number: ");
+            scanf("%d",&player_2);
+            if(player_1 != player_2)
+            {
+                printf("Player_1 Wins!!!");
+            }
+            else
+            {
                 printf("Right, Player_2 Wins!!!");
-          }
+            }
         }
        else
        {

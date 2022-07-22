@@ -1,6 +1,5 @@
 #include<stdio.h>
-#include<conio.h>
-int main()
+void main()
 {
     int n,rev=0,rem,org;
     printf("Enter the number = ");
