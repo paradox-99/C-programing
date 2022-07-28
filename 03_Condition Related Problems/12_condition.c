@@ -9,7 +9,7 @@ void main()
     printf("\n2: Subtraction");
     printf("\n3: Multiplication");
     printf("\n4: Division");
-    printf("\nEnter your choice = ");
+    printf("\nEnter your choice = ");  
     scanf("%d",&Choice);
     switch (Choice)
     {
