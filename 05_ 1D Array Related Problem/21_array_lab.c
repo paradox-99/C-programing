@@ -19,17 +19,12 @@ void main()
         {
             if(A[i]==B[j])
             {
-                c[p]=A[i];
-                p++;
+                p=p+1;
+                break;
             }
         }
+        if(p==0)
+            printf("%d\t", A[i]);
+        p=0;
     }
-    if(p>0)
-    {
-        printf("Intersection: ");
-        for ( i = 0; i < p; i++)
-            printf("%d\t",c[i]);
-    }
-    else
-        printf("Empty set..");
 }
