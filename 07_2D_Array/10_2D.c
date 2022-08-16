@@ -35,5 +35,5 @@ void main()
         printf("Summation: %d",sum);
     }
     else
-        printf("Only odd integer is exepted..");
+        printf("Only odd integer is excepted..");
 }
