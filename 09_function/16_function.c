@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<string.h>
 
 void str_length(char a[], char b[]);
 int find_substr(char a[], char b[]);
@@ -24,13 +23,13 @@ void main()
 void str_length(char a[], char b[])
 {
     int i=0;
-    while (a[i] != 0)
+    while (a[i] != '\0')
     {
         count[0]++;
         i++;
     }
     i=0;
-    while (b[i] != 0)
+    while (b[i] != '\0')
     {
         count[1]++;
         i++;

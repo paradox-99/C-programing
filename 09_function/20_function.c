@@ -34,29 +34,29 @@ struct base_count Get_number_and_base()
         printf("Base number not in proper range!");
 }
 
-struct base_count Convert_number(struct base_count pass)
+struct base_count Convert_number(struct base_count pass1)
 {
     int i=0;
-    while (pass.convert != 0)
+    while (pass1.convert != 0)
     {
-        pass.reminder[i] = pass.convert % pass.base;
-        pass.convert = pass.convert/pass.base;
-        if(pass.reminder[i] == 10)
-            pass.rem[i]='A';
-        else if(pass.reminder[i] == 11)
-            pass.rem[i]='B';
-        else if(pass.reminder[i] == 12)
-            pass.rem[i]='C';
-        else if(pass.reminder[i] == 13)
-            pass.rem[i]='D';
-        else if(pass.reminder[i] == 14)
-            pass.rem[i]='E';
-        else if(pass.reminder[i] == 15)
-            pass.rem[i]='F';
+        pass1.reminder[i] = pass1.convert % pass1.base;
+        pass1.convert = pass1.convert/pass1.base;
+        if(pass1.reminder[i] == 10)
+            pass1.rem[i]='A';
+        else if(pass1.reminder[i] == 11)
+            pass1.rem[i]='B';
+        else if(pass1.reminder[i] == 12)
+            pass1.rem[i]='C';
+        else if(pass1.reminder[i] == 13)
+            pass1.rem[i]='D';
+        else if(pass1.reminder[i] == 14)
+            pass1.rem[i]='E';
+        else if(pass1.reminder[i] == 15)
+            pass1.rem[i]='F';
         i++;
     }
-    pass.n = i-1;
-    return pass;
+    pass1.n = i-1;
+    return pass1;
 }
 
 struct base_count Show_number(struct base_count pass2)

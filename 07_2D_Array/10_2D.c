@@ -36,4 +36,5 @@ void main()
     }
     else
         printf("Only odd integer is excepted..");
+        
 }

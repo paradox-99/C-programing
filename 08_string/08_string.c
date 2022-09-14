@@ -7,7 +7,7 @@ int main()
     int flag=0,i;
     printf("Enter 1st string: ");
     gets(s1);
-    printf("Enter 1st string: ");
+    printf("Enter 2nd string: ");
     fflush(stdin);
     gets(s2);
 
