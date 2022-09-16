@@ -7,7 +7,6 @@ struct str
     float CGPA;
 };
 
-
 void main()
 {
     struct str info;

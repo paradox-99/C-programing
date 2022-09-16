@@ -5,7 +5,6 @@ struct comp
     float r,i;
 };
 
-
 void main()
 {
     struct comp pri;

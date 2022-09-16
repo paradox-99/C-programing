@@ -1,21 +1,30 @@
-#include <stdio.h>
+#include<stdio.h>
 
-// C recursive function to solve tower of hanoi puzzle
-void towerOfHanoi(int n, char from_rod, char to_rod, char aux_rod)
+struct cmp
 {
-	if (n == 1)
-	{
-		printf("\n Move disk 1 from rod %c to rod %c", from_rod, to_rod);
-		return;
+	int r[2],i[2];
+	int sum[2],sub[2];
+};
+
+void main()
+{
+	struct cmp comp;
+	int i;
+	for(i=0; i<2; i++)
+	{	
+		printf("Enter the %d th real and imagine number: ",i+1);
+    		scanf("%d%d", &comp.r[i], &comp.i[i]);
 	}
-	towerOfHanoi(n-1, from_rod, aux_rod, to_rod);
-	printf("\n Move disk %d from rod %c to rod %c", n, from_rod, to_rod);
-	towerOfHanoi(n-1, aux_rod, to_rod, from_rod);
-}
-
-int main()
-{
-	int n = 20; // Number of disks
-	towerOfHanoi(n, 'A', 'C', 'B'); // A, B and C are names of rods
-	return 0;
+	comp.sum[0] = comp.r[0]+comp.r[1];
+	comp.sum[1] = comp.i[0]+comp.i[1];
+	comp.sub[0] = comp.r[0]-comp.r[1];
+	comp.sub[1] = comp.i[0]-comp.i[1];
+	if (comp.sum[1] > 0)
+		printf("\n%d+%di",comp.sum[0],comp.sum[1]);
+	else
+		printf("\n%d%di",comp.sum[0],comp.sum[1]);
+	if (comp.sub > 0)
+		printf("\n%d+%di",comp.sub[0],comp.sub[1]);
+	else
+		printf("\n%d%di",comp.sub[0],comp.sub[1]);
 }
